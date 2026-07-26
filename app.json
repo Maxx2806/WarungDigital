@@ -4,9 +4,19 @@
     "slug": "warung-digital-uas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "/assets/icon.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#2E7D32"
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.mahasiswa.warungdigital"
@@ -15,18 +25,14 @@
       "package": "com.mahasiswa.warungdigital",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "/assets/android-icon-foreground.png",
-        "backgroundImage": "/assets/android-icon-background.png",
-        "monochromeImage": "/assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "permissions": [
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
     },
     "web": {
-      "favicon": "/assets/favicon.png"
+      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
