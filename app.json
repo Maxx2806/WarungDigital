@@ -1,29 +1,33 @@
 {
   "expo": {
-    "name": "WarungDigital",
-    "slug": "WarungDigital",
+    "name": "Warung Digital",
+    "slug": "warung-digital-uas",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "/assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
+    "plugins": [],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mahasiswa.warungdigital"
     },
     "android": {
+      "package": "com.mahasiswa.warungdigital",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "/assets/android-icon-foreground.png",
+        "backgroundImage": "/assets/android-icon-background.png",
+        "monochromeImage": "/assets/android-icon-monochrome.png"
       },
-      "edgeToEdgeEnabled": true
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "GANTI_DENGAN_PROJECT_ID_KAMU"
+      }
     }
   }
 }
